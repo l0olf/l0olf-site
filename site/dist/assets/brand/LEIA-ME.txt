@@ -1,0 +1,15 @@
+L0olf — proposta de identidade, 23/10/2026
+
+Lettering vetorial próprio. Todos os caracteres são paths: nenhuma fonte precisa ser instalada.
+
+l0olf-principal.svg — branco quente e zero laranja; fundo transparente, para superfícies escuras.
+l0olf-fundo-claro.svg — carvão e zero laranja escuro; fundo transparente.
+l0olf-branca.svg / l0olf-preta.svg — versões monocromáticas transparentes.
+l0olf-simbolo.svg — monograma L0 transparente.
+l0olf-avatar.svg — monograma sobre fundo laranja, adequado a avatar/favicon.
+
+Cores: carvão #181411, branco quente #F6F1E7, laranja #FF6829; acento em fundo claro #B73B12.
+Manter proporção. Reservar margem ao redor equivalente à espessura da haste L. Não aplicar efeitos ao arquivo principal.
+O corte diagonal do zero diferencia o algarismo 0 da letra o. Os terminais de L e f usam cortes no mesmo sentido.
+O avatar tem fundo; os outros SVGs preservam transparência.
+Esta é uma proposta gráfica original, sem pesquisa de disponibilidade ou registro da marca.

@@ -1,0 +1,109 @@
+/* L0olf — warm light on dark surfaces. The layout and scroll choreography
+   continue to live in brand.css / cover.css / brand.js. */
+:root{--ember-white:#fff0e2;--ember-muted:#cfb3a8;--ember-peach:#ffad7a;--ember-line:#f7c3aa33;--ember-base:#130e10}
+body{background:var(--ember-base);color:var(--ember-white)}
+.review{background:#280e17;color:#dfb3a3}
+.header.cover-header{color:var(--ember-white)}
+.cover-header .header-contact span{color:#ffad7a}
+.cover-header .menu{color:var(--ember-white);border-color:#f9ceb751}
+.cover-header #mobile-nav{background:#261015;color:var(--ember-white);border-color:var(--ember-line);box-shadow:0 20px 60px #08060788}
+
+/* The brighter part stays behind the large mark; the small copy has a dark field. */
+.hero.hero-poster{background:#260e17;color:var(--ember-white)}
+.cover-stage{
+ background:
+  radial-gradient(ellipse 36% 42% at 92% 54%,#f76a26 0%,#e34219 25%,#c62a1c85 55%,transparent 95%),
+  radial-gradient(ellipse 46% 65% at 65% 76%,#bc301d 0%,#85182088 46%,transparent 85%),
+  radial-gradient(ellipse 65% 70% at 3% 110%,#641526 0%,transparent 80%),
+  linear-gradient(125deg,#130e10 10%,#261015 54%,#48121d 100%);
+}
+.hero-poster h1 em{color:#ffb88d}
+.cover-statement>.tiny,.cover-description>.tiny{color:#edbd9f}
+.cover-description p{color:var(--ember-white)}
+.cover-wordmark img{filter:drop-shadow(0 6px 18px #270a1229)}
+.cover-footer{border-color:#f3c5ab50;color:#f8ddc9}
+.cover-explore .arrow-icon{color:#ffb88d}
+
+/* O olhar — the orange point is the light source in a quieter composition. */
+.perspective{background:#181012;color:var(--ember-white)}
+.perspective-stage{background:radial-gradient(ellipse 58% 66% at 21% 69%,#76261c66 0%,#3c172448 45%,transparent 85%),linear-gradient(130deg,#181012,#1c1015 75%)}
+.chapter-label{border-color:var(--ember-line);color:#e6c7b6}
+.perspective h2 em,.thought h3 em{color:#ffac79}
+.thought p{color:#cfb5a8}
+.diagram-orbit{border-color:#dfad8c51}
+.diagram-line{background:#dfad8c3b}
+.diagram-label{background:#27161b;color:#f3d4c2;border-color:#c278574d}
+.focus-core{background:radial-gradient(circle at 28% 22%,#ffb06c,#fa602c 43%,#aa281e 90%);box-shadow:0 0 70px #f355232e,12px 17px 35px #07050866}
+.scene-progress{background:#e1b7a130}
+.perspective-bottom{color:#d2ad98}
+
+/* Each existing artwork keeps its own composition and light direction. */
+.work{background:radial-gradient(ellipse 46% 520px at 98% 5%,#9f2d1b36,transparent 90%),#100d0f}
+.work-intro h2 em,.performance-heading h3 em,.automation-copy h3 em{color:#ffad7a}
+.work-intro p,.piece-caption p,.performance-piece>p,.automation-copy p{color:var(--ember-muted)}
+.piece-caption>span{color:#ffac79}
+.art-meta{color:var(--ember-white);background:radial-gradient(ellipse 95% 75% at 94% 33%,#ff7c2b 0%,#e9451c 36%,transparent 78%),linear-gradient(155deg,#5a1720,#ab261d 46%,#310f1b 89%)}
+.art-meta .art-caption{color:#ffe8d6}
+.art-type{color:#fff0e2}
+.art-type em{color:#ffd0ac}
+.eye{background:#291016;box-shadow:12px 15px 0 #6f17238c}
+.pupil{background:#ffe4cb;color:#2e1319}
+.art-google{color:var(--ember-white);background:radial-gradient(ellipse 88% 95% at 106% 86%,#fb7026 0%,#bd301e 30%,#64161d70 63%,transparent 90%),#201217}
+.art-google .art-caption,.art-google .art-foot{color:#f0ccbb}
+.search-type em{color:#ffbd91}
+.lens{border-color:#ffb17d;background:#36151b77;box-shadow:4px 5px 0 #8b322b}
+.lens:after{background:#ffb17d}
+.lens span{color:#fff0e2}
+.performance-piece{border-color:var(--ember-line);background:none;overflow:visible;isolation:isolate}
+/* The halo fades outside the editorial column, without a rectangular edge. */
+.performance-piece:before{content:'';position:absolute;inset:-140px calc(var(--gutter)*-1);z-index:-1;pointer-events:none;background:radial-gradient(ellipse 44% 48% at 77% 50%,#6b1d1f66 0%,#6b1d1f26 46%,transparent 100%)}
+.performance-note{color:#dda88a}
+.radar{background:radial-gradient(circle,#c745273d,transparent 67%)}
+.radar i{border-color:#e28b6152}
+.radar-sweep-clip{position:absolute;inset:0;overflow:hidden;border-radius:50%}
+.radar-sweep{background:conic-gradient(transparent 0deg 270deg,#f3732710 300deg,#fb62264d 357deg,#ffbc88 360deg)}
+.signal{background:#ffe3cd;color:#33151a}
+.s3{background:#ff7c3c;color:#281116}
+.automation-art{background:radial-gradient(ellipse 85% 90% at 12% 95%,#e54e22 0%,#921f1f 29%,transparent 75%),#261018}
+.automation-art>.tiny{color:#f2bd9e}
+.wire-base{stroke:#f3c9b244}
+.wire{stroke:#ffc68f}
+.node{background:#ffe0c3;color:#381319;box-shadow:5px 6px #130a1099}
+.n2{background:#ff7a39}
+.automation-copy .small-copy{color:#b4998d}
+
+/* A luminous interval, with the same pinned typography and asymmetric rhythm. */
+.manifesto{background:#4b101c;color:var(--ember-white)}
+.manifesto-stage{background:radial-gradient(ellipse 76% 100% at 12% 0%,#fb742c 0%,#e4431b 32%,#b7291b88 58%,transparent 84%),radial-gradient(ellipse 55% 70% at 100% 100%,#ab231b,transparent 85%),linear-gradient(140deg,#851f1c,#3e101c 80%)}
+.manifesto h2 em{color:#ffe0c4}
+.manifesto-stage>.tiny{color:#42141b}
+.manifesto-mark{color:#ffd0a532}
+.manifesto-foot{border-color:#f6c7ad5e;color:#ffe2ce}
+
+.about{background:radial-gradient(ellipse 58% 90% at -8% 58%,#7a1c2566,transparent 87%),#1c1016;color:var(--ember-white)}
+.about-copy h2 em{color:#ffad7a}
+.about-copy p{color:var(--ember-muted)}
+.name-art{background:radial-gradient(ellipse 105% 90% at 7% 92%,#f46528 0%,#bf331f 29%,transparent 74%),linear-gradient(150deg,#35121b,#621a22);color:#f5c5a8}
+.name-art strong{color:#fff0df}
+.name-art strong span{color:#ff995b}
+.text-link{color:#f4d5c0}
+
+.contact{background:radial-gradient(ellipse 57% 65% at 100% 32%,#ee6223 0%,#bd2b1b 22%,#64111d70 53%,transparent 86%),linear-gradient(135deg,#1b1015,#3b101c 85%)}
+.contact-top{color:#e9bda1}
+.contact h2 em{color:#ffbd92}
+.contact-arrow{border-color:#ffd0a78c;color:#ffe8d3;background:#38151b33}
+.contact-arrow:hover{background:#ff8b48;color:#241016}
+.contact-bottom p,.contact-bottom>.tiny{color:#e0bca6}
+.closing-logo{opacity:1}
+footer{background:#160c12;color:#c9a595;border-top:1px solid #f3c8ad1c}
+
+
+
+@media(max-width:700px){
+ .cover-stage{background:radial-gradient(ellipse 100% 36% at 105% 78%,#f16a28 0%,#b7311e 34%,#6c182356 65%,transparent 95%),radial-gradient(ellipse 100% 60% at -25% 100%,#671425,transparent 82%),linear-gradient(145deg,#130e10,#33111a)}
+ .perspective-stage{background:radial-gradient(ellipse 100% 430px at 17% 390px,#792c224d,transparent 95%),#191014}
+ .thought+.thought{border-color:var(--ember-line)}
+ .performance-piece:before{background:radial-gradient(ellipse 74% 40% at 60% 58%,#6b1d1f66 0%,#6b1d1f26 46%,transparent 100%)}
+ .manifesto-stage{background:radial-gradient(ellipse 100% 90% at 0% 0%,#ef6b29 0%,#c4371e 36%,transparent 85%),linear-gradient(145deg,#76201f,#3c101c)}
+ .contact{background:radial-gradient(ellipse 100% 55% at 120% 50%,#c13d1c 0%,#7b1a2066 50%,transparent 90%),#291018}
+}
