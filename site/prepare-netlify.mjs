@@ -24,9 +24,7 @@ let home = read('index.html').replace('content="noindex,nofollow"', 'content="in
 let privacy = read('privacidade/index.html')
   .replace('content="noindex,nofollow"', 'content="index,follow"')
   .replace('<div class="review">VERSÃO PARA REVISÃO ANTES DA PUBLICAÇÃO</div>', '')
-  .replace('Última atualização: 23 de outubro de 2026.', 'Última atualização: 26 de outubro de 2026.')
-  .replace('<p class="notice">Esta versão está disponível apenas para revisão local. A hospedagem pública e seu tratamento de registros técnicos serão confirmados antes da publicação.</p>', '')
-  .replace('A hospedagem pública prevista é a Netlify. Ela ainda não foi ativada nesta versão local. Antes da publicação, serão conferidos os registros técnicos e componentes efetivamente utilizados pelo provedor. Sua política descreve tratamento de dados como IP e informações do dispositivo, além de operações internacionais. Veja a <a href="https://www.netlify.com/privacy/">política da Netlify</a>.', 'A Netlify hospeda e distribui os arquivos deste site. Para entregar as páginas, manter a segurança e diagnosticar falhas, a infraestrutura de hospedagem processa dados técnicos das requisições, como endereço IP, página solicitada e informações do navegador. Esse processamento pode ocorrer fora do Brasil. Consulte a <a href="https://www.netlify.com/privacy/">política da Netlify</a> e a <a href="https://docs.netlify.com/manage/monitoring/observability/overview/">documentação dos registros de acesso</a>.');
+  .replace('<p class="notice">Esta versão está disponível apenas para revisão local. A hospedagem pública e seu tratamento de registros técnicos serão confirmados antes da publicação.</p>', '');
 
 function withoutPublicationTags(html) {
   return html.replace(/\s*<link rel="canonical"[^>]*>/g, '')
